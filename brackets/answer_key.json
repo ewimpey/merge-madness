@@ -1,0 +1,78 @@
+{
+    "round1": {
+      "game1": {"team1": "Purdue", "team2": "E. Kentucky", "winner": "Purdue"},
+      "game2": {"team1": "Oklahoma", "team2": "Colorado St.", "winner": "Oklahoma"},
+      "game3": {"team1": "Clemson", "team2": "Richmond", "winner": ""},
+      "game4": {"team1": "Auburn", "team2": "Louisiana Tech", "winner": ""},
+      "game5": {"team1": "South Carolina", "team2": "Gonzaga", "winner": ""},
+      "game6": {"team1": "Kansas", "team2": "Cornell", "winner": ""},
+      "game7": {"team1": "Boise St.", "team2": "Wake Forest", "winner": ""},
+      "game8": {"team1": "Marquette", "team2": "Oakland", "winner": ""},
+      "game9": {"team1": "Arizona", "team2": "LIttle Rock", "winner": ""},
+      "game10": {"team1": "Northwestern", "team2": "TCU", "winner": ""},
+      "game11": {"team1": "BYU", "team2": "Grand Canyon", "winner": ""},
+      "game12": {"team1": "San Diego St.", "team2": "UC Irvine", "winner": ""},
+      "game13": {"team1": "Wisconsin", "team2": "New Mexico", "winner": ""},
+      "game14": {"team1": "Alabama", "team2": "Akron", "winner": ""},
+      "game15": {"team1": "Utah State", "team2": "Virginia", "winner": ""},
+      "game16": {"team1": "Iowa State", "team2": "E. Washington", "winner": ""},
+      "game17": {"team1": "UConn", "team2": "Merrimack", "winner": ""},
+      "game18": {"team1": "Texas", "team2": "Michigan St.", "winner": ""},
+      "game19": {"team1": "Washington St.", "team2": "Appalachian St.", "winner": ""},
+      "game20": {"team1": "Kentucky", "team2": "Vermont", "winner": ""},
+      "game21": {"team1": "Saint Mary's", "team2": "Indiana St.", "winner": ""},
+      "game22": {"team1": "Baylor", "team2": "High Point", "winner": ""},
+      "game23": {"team1": "Florida", "team2": "Fla. Atlantic", "winner": ""},
+      "game24": {"team1": "UNC", "team2": "Colgate", "winner": ""},
+      "game25": {"team1": "Houston", "team2": "South Dakota St.", "winner": ""},
+      "game26": {"team1": "Mississippi St.", "team2": "Nebraska", "winner": ""},
+      "game27": {"team1": "Illinois", "team2": "McNeese St.", "winner": ""},
+      "game28": {"team1": "Duke", "team2": "Samford", "winner": ""},
+      "game29": {"team1": "Dayton", "team2": "South Florida", "winner": ""},
+      "game30": {"team1": "Creighton", "team2": "Charleston", "winner": ""},
+      "game31": {"team1": "Texas Tech", "team2": "Nevada", "winner": ""},
+      "game32": {"team1": "Tennessee", "team2": "Fairfield", "winner": ""}
+    },
+    "round2": {
+      "game1": {"team1": "", "team2": "", "winner": ""},
+      "game2": {"team1": "", "team2": "", "winner": ""},
+      "game3": {"team1": "", "team2": "", "winner": ""},
+      "game4": {"team1": "", "team2": "", "winner": ""},
+      "game5": {"team1": "", "team2": "", "winner": ""},
+      "game6": {"team1": "", "team2": "", "winner": ""},
+      "game7": {"team1": "", "team2": "", "winner": ""},
+      "game8": {"team1": "", "team2": "", "winner": ""},
+      "game9": {"team1": "", "team2": "", "winner": ""},
+      "game10": {"team1": "", "team2": "", "winner": ""},
+      "game11": {"team1": "", "team2": "", "winner": ""},
+      "game12": {"team1": "", "team2": "", "winner": ""},
+      "game13": {"team1": "", "team2": "", "winner": ""},
+      "game14": {"team1": "", "team2": "", "winner": ""},
+      "game15": {"team1": "", "team2": "", "winner": ""},
+      "game16": {"team1": "", "team2": "", "winner": ""}
+    },
+    "round3": {
+      "game1": {"team1": "", "team2": "", "winner": ""},
+      "game2": {"team1": "", "team2": "", "winner": ""},
+      "game3": {"team1": "", "team2": "", "winner": ""},
+      "game4": {"team1": "", "team2": "", "winner": ""},
+      "game5": {"team1": "", "team2": "", "winner": ""},
+      "game6": {"team1": "", "team2": "", "winner": ""},
+      "game7": {"team1": "", "team2": "", "winner": ""},
+      "game8": {"team1": "", "team2": "", "winner": ""}
+    },
+    "round4": {
+      "game1": {"team1": "", "team2": "", "winner": ""},
+      "game2": {"team1": "", "team2": "", "winner": ""},
+      "game3": {"team1": "", "team2": "", "winner": ""},
+      "game4": {"team1": "", "team2": "", "winner": ""}
+    },
+    "round5": {
+      "game1": {"team1": "", "team2": "", "winner": ""},
+      "game2": {"team1": "", "team2": "", "winner": ""}
+    },
+    "round6": {
+      "game1": {"team1": "", "team2": "", "winner": ""}
+    }
+  }
+  
