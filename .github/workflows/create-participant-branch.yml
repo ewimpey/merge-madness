@@ -1,0 +1,21 @@
+name: Create Participant Branch
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, 'Join Merge Madness')
+    steps:
+    - name: Extract Username
+      id: get-username
+      run: echo "::set-output name=USERNAME::$(echo ${{ github.event.issue.title }} | cut -d' ' -f4)"
+    - name: Create Branch
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.PAT }}
+        repository: ${{ github.repository }}
+        event-type: create-branch
+        client-payload: '{"ref":"main", "branchName":"${{ steps.get-username.outputs.USERNAME }}-branch"}'
