@@ -7,11 +7,13 @@ on:
 jobs:
   create-branch:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.title, 'Join Merge Madness')
-    steps:
-    - name: Extract Username and Set Env
-      run: echo "USERNAME=$(echo ${{ github.event.issue.title }} | cut -d' ' -f4)" >> $GITHUB_ENV
-    - name: Create Branch
+    if: contains(github.event.issue.title, 'joining merge madness')
+steps:
+  - name: Extract Username and Set Env
+    run: |
+      USERNAME=$(echo "${{ github.event.issue.title }}" | awk '{print $1}')
+      echo "USERNAME=$USERNAME" >> $GITHUB_ENV
+  - name: Create Branch
       env:
           USERNAME: ${{ env.USERNAME }}
           PAT: ${{ secrets.PAT }} # Assuming you've added your PAT as a secret named PAT
