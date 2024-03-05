@@ -25,7 +25,7 @@ Change directory to the cloned repository:
 ## Step 4: Change to your branch
 Change to your branch, the one that has the same name as your username:
 
-```git checkout <your-github-username>```
+```git checkout -b <your-github-username>```
 
 ## Step 5: Fill Out Your Bracket
 
