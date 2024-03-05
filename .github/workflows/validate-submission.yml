@@ -3,7 +3,7 @@ name: Validate and Approve Bracket Submission
 on:
   pull_request:
     paths:
-      - '**/final_bracket.json'  # Adjust if your file might be in subdirectories
+      - '**/final_bracket.json'  
     types: [opened, synchronize]
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.10'  # Specify the Python version
+          python-version: '3.10'  # Specifies the Python version
 
       - name: Check Date
         id: check-date
@@ -53,6 +53,7 @@ jobs:
             echo "Validation passed successfully."
           else
             echo "Validation failed or did not explicitly pass."
+            cat validation_output.txt
             exit 1
           fi
 
