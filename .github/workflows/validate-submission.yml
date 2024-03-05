@@ -29,14 +29,14 @@ jobs:
       - name: Check Date
         id: check-date
         run: |
-          CUT_OFF=$(date -d '2023-03-21T12:00:00' +%s)
+          CUT_OFF=$(date -d '2024-03-21T12:00:00' +%s)
           NOW=$(date +%s)
           if [ $NOW -lt $CUT_OFF ]; then
             echo "It is before the cutoff date."
             echo "before_cutoff=true" >> $GITHUB_ENV
           else
             echo "It is after the cutoff date."
-            echo "before_cutoff=false" >> $GITHUB_ENV
+            exit 1  # Fail the workflow if after the cutoff date
           fi
 
 
