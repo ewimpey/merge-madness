@@ -36,7 +36,7 @@ jobs:
             echo "before_cutoff=true" >> $GITHUB_ENV
           else
             echo "It is after the cutoff date."
-            echo "before_cutoff=false" >> $GITHUB_ENV
+            exit 1  # Fail the workflow if after the cutoff date
           fi
 
 
