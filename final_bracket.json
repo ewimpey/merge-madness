@@ -1,0 +1,351 @@
+{
+    "round0": {
+        "game1": {
+            "team1": "M16a",
+            "team2": "M16b",
+            "winner": "M16b"
+        },
+        "game2": {
+            "team1": "M11a",
+            "team2": "M11b",
+            "winner": "M11b"
+        },
+        "game3": {
+            "team1": "W16a",
+            "team2": "W16b",
+            "winner": "W16b"
+        },
+        "game4": {
+            "team1": "W11a",
+            "team2": "W11b",
+            "winner": "W11b"
+        }
+    },
+    "round1": {
+        "game1": {
+            "team1": "M1",
+            "team2": "M16b",
+            "winner": "M1"
+        },
+        "game2": {
+            "team1": "M8",
+            "team2": "M9",
+            "winner": "M8"
+        },
+        "game3": {
+            "team1": "M5",
+            "team2": "M12",
+            "winner": "M5"
+        },
+        "game4": {
+            "team1": "M4",
+            "team2": "M13",
+            "winner": "M4"
+        },
+        "game5": {
+            "team1": "M6",
+            "team2": "M11b",
+            "winner": "M6"
+        },
+        "game6": {
+            "team1": "M3",
+            "team2": "M14",
+            "winner": "M3"
+        },
+        "game7": {
+            "team1": "M7",
+            "team2": "M10",
+            "winner": "M7"
+        },
+        "game8": {
+            "team1": "M2",
+            "team2": "M15",
+            "winner": "M2"
+        },
+        "game9": {
+            "team1": "W1",
+            "team2": "W16b",
+            "winner": "W1"
+        },
+        "game10": {
+            "team1": "W8",
+            "team2": "W9",
+            "winner": "W8"
+        },
+        "game11": {
+            "team1": "W5",
+            "team2": "W12",
+            "winner": "W5"
+        },
+        "game12": {
+            "team1": "W4",
+            "team2": "W13",
+            "winner": "W4"
+        },
+        "game13": {
+            "team1": "W6",
+            "team2": "W11b",
+            "winner": "W6"
+        },
+        "game14": {
+            "team1": "W3",
+            "team2": "W14",
+            "winner": "W3"
+        },
+        "game15": {
+            "team1": "W7",
+            "team2": "W10",
+            "winner": "W7"
+        },
+        "game16": {
+            "team1": "W2",
+            "team2": "W15",
+            "winner": "W2"
+        },
+        "game17": {
+            "team1": "E1",
+            "team2": "E16",
+            "winner": "E1"
+        },
+        "game18": {
+            "team1": "E8",
+            "team2": "E9",
+            "winner": "E8"
+        },
+        "game19": {
+            "team1": "E5",
+            "team2": "E12",
+            "winner": "E5"
+        },
+        "game20": {
+            "team1": "E4",
+            "team2": "E13",
+            "winner": "E4"
+        },
+        "game21": {
+            "team1": "E6",
+            "team2": "E11",
+            "winner": "E6"
+        },
+        "game22": {
+            "team1": "E3",
+            "team2": "E14",
+            "winner": "E3"
+        },
+        "game23": {
+            "team1": "E7",
+            "team2": "E10",
+            "winner": "E7"
+        },
+        "game24": {
+            "team1": "E2",
+            "team2": "E15",
+            "winner": "E2"
+        },
+        "game25": {
+            "team1": "S1",
+            "team2": "S16",
+            "winner": "S1"
+        },
+        "game26": {
+            "team1": "S8",
+            "team2": "S9",
+            "winner": "S8"
+        },
+        "game27": {
+            "team1": "S5",
+            "team2": "S12",
+            "winner": "S5"
+        },
+        "game28": {
+            "team1": "S4",
+            "team2": "S13",
+            "winner": "S4"
+        },
+        "game29": {
+            "team1": "S6",
+            "team2": "S11",
+            "winner": "S6"
+        },
+        "game30": {
+            "team1": "S3",
+            "team2": "S14",
+            "winner": "S3"
+        },
+        "game31": {
+            "team1": "S7",
+            "team2": "S10",
+            "winner": "S7"
+        },
+        "game32": {
+            "team1": "S2",
+            "team2": "S15",
+            "winner": "S2"
+        }
+    },
+    "round2": {
+        "game1": {
+            "team1": "M1",
+            "team2": "M8",
+            "winner": "M1"
+        },
+        "game2": {
+            "team1": "M5",
+            "team2": "M4",
+            "winner": "M4"
+        },
+        "game3": {
+            "team1": "M6",
+            "team2": "M3",
+            "winner": "M3"
+        },
+        "game4": {
+            "team1": "M7",
+            "team2": "M2",
+            "winner": "M2"
+        },
+        "game5": {
+            "team1": "W1",
+            "team2": "W8",
+            "winner": "W1"
+        },
+        "game6": {
+            "team1": "W5",
+            "team2": "W4",
+            "winner": "W4"
+        },
+        "game7": {
+            "team1": "W6",
+            "team2": "W3",
+            "winner": "W3"
+        },
+        "game8": {
+            "team1": "W7",
+            "team2": "W2",
+            "winner": "W2"
+        },
+        "game9": {
+            "team1": "E1",
+            "team2": "E8",
+            "winner": "E1"
+        },
+        "game10": {
+            "team1": "E5",
+            "team2": "E4",
+            "winner": "E4"
+        },
+        "game11": {
+            "team1": "E6",
+            "team2": "E3",
+            "winner": "E3"
+        },
+        "game12": {
+            "team1": "E7",
+            "team2": "E2",
+            "winner": "E2"
+        },
+        "game13": {
+            "team1": "S1",
+            "team2": "S8",
+            "winner": "S1"
+        },
+        "game14": {
+            "team1": "S5",
+            "team2": "S4",
+            "winner": "S4"
+        },
+        "game15": {
+            "team1": "S6",
+            "team2": "S3",
+            "winner": "S3"
+        },
+        "game16": {
+            "team1": "S7",
+            "team2": "S2",
+            "winner": "S2"
+        }
+    },
+    "round3": {
+        "game1": {
+            "team1": "M1",
+            "team2": "M4",
+            "winner": "M1"
+        },
+        "game2": {
+            "team1": "M3",
+            "team2": "M2",
+            "winner": "M2"
+        },
+        "game3": {
+            "team1": "W1",
+            "team2": "W4",
+            "winner": "W1"
+        },
+        "game4": {
+            "team1": "W3",
+            "team2": "W2",
+            "winner": "W2"
+        },
+        "game5": {
+            "team1": "E1",
+            "team2": "E4",
+            "winner": "E1"
+        },
+        "game6": {
+            "team1": "E3",
+            "team2": "E2",
+            "winner": "E2"
+        },
+        "game7": {
+            "team1": "S1",
+            "team2": "S4",
+            "winner": "S1"
+        },
+        "game8": {
+            "team1": "S3",
+            "team2": "S2",
+            "winner": "S2"
+        }
+    },
+    "round4": {
+        "game1": {
+            "team1": "M1",
+            "team2": "M2",
+            "winner": "M1"
+        },
+        "game2": {
+            "team1": "W1",
+            "team2": "W2",
+            "winner": "W1"
+        },
+        "game3": {
+            "team1": "E1",
+            "team2": "E2",
+            "winner": "E1"
+        },
+        "game4": {
+            "team1": "S1",
+            "team2": "S2",
+            "winner": "S1"
+        }
+    },
+    "round5": {
+        "game1": {
+            "team1": "M1",
+            "team2": "W1",
+            "winner": "M1"
+        },
+        "game2": {
+            "team1": "E1",
+            "team2": "S1",
+            "winner": "E1"
+        }
+    },
+    "round6": {
+        "game1": {
+            "team1": "M1",
+            "team2": "E1",
+            "winner": "M1"
+        }
+    }
+}
