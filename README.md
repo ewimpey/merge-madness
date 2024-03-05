@@ -1,5 +1,5 @@
 # Welcome to Merge Madness 24!
-![Merge Madness](/helper/merge-madness.jpg)
+![Merge Madness](/helpers/merge-madness.jpg)
 
 Join our NCAA bracket challenge and sharpen your Git skills at the same time! Whether you're a Git newbie or a seasoned veteran, follow these steps to submit your bracket predictions.
 
