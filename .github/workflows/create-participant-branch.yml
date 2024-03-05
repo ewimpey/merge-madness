@@ -1,0 +1,26 @@
+name: Create Branch on Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, 'joining merge madness')
+    steps:
+      - name: Extract Username and Set Env
+        run: |
+          USERNAME=$(echo "${{ github.event.issue.title }}" | awk '{print $1}')
+          echo "USERNAME=$USERNAME" >> $GITHUB_ENV
+      - name: Create Branch
+        env:
+          PAT: ${{ secrets.PAT }}
+        run: |
+          BRANCH_NAME="${USERNAME}"
+          DEFAULT_BRANCH_SHA=$(curl -s -H "Authorization: token ${PAT}" \
+          https://api.github.com/repos/${{ github.repository }}/git/ref/heads/main | jq -r '.object.sha')
+          
+          curl -X POST -H "Authorization: token ${PAT}" \
+          -d "{\"ref\":\"refs/heads/$BRANCH_NAME\",\"sha\":\"$DEFAULT_BRANCH_SHA\"}" \
+          https://api.github.com/repos/${{ github.repository }}/git/refs
