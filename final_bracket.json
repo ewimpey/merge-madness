@@ -3,7 +3,7 @@
         "game1": {
             "team1": "M16a",
             "team2": "M16b",
-            "winner": "GT BABY!!"
+            "winner": "M16a"
         },
         "game2": {
             "team1": "M11a",
@@ -140,7 +140,7 @@
         "game24": {
             "team1": "E2",
             "team2": "E15",
-            "winner": "E2    "
+            "winner": "E2"
         },
         "game25": {
             "team1": "S1",
