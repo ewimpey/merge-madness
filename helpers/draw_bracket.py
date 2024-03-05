@@ -2,13 +2,9 @@ import json
 import matplotlib.pyplot as plt
 import os
 
-# Change the current working directory to the script's directory
-script_dir = os.path.dirname(__file__)  # Get the directory where the script is located
-os.chdir(script_dir)  # Change the working directory
-
-import json
-import matplotlib.pyplot as plt
-import numpy as np
+# Get the directory where the script is located
+script_dir = os.path.dirname(__file__)
+brackets_dir = os.path.abspath(os.path.join(script_dir, '..'))
 
 def draw_game(ax, round_num, game_num, team1, team2, winner, total_rounds, y_step):
     # Calculate positions
@@ -57,4 +53,5 @@ def draw_bracket(file_path):
     plt.title('Tournament Bracket')
     plt.show()
 
-draw_bracket('final_bracket.json')
+final_bracket = os.path.join(brackets_dir, 'final_bracket.json')
+draw_bracket(final_bracket)

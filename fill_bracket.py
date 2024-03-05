@@ -1,13 +1,12 @@
 import os
 import json
 
-# Change the current working directory to the script's directory
-script_dir = os.path.dirname(__file__)  # Get the directory where the script is located
-os.chdir(script_dir)  # Change the working directory
-
-
 def prompt_for_winner(team1, team2):
-    print(f"\n{team1} vs {team2}. Click the team that you think will win:")
+    """
+    Provide user prompt for two teams
+    Returns the winning team
+    """
+    print(f"\n{team1} vs {team2}")
     while True:
         choice = input(f"Type 1 for {team1} or 2 for {team2}: ").strip()
         if choice in ['1', '2']:
@@ -16,16 +15,46 @@ def prompt_for_winner(team1, team2):
             print("Invalid input. Please type 1 or 2.")
 
 def update_matchups(bracket, round_num, game_num, winner):
+    """
+    Updates future rounds based on winners
+    """
     next_round_num = round_num + 1
     next_game_num = (game_num - 1) // 2 + 1
     if next_round_num > 6:
-        return  # No next round after the championship
+        return  # Round 6 is championship
     next_round = f"round{next_round_num}"
     next_game = f"game{next_game_num}"
     position = "team1" if game_num % 2 != 0 else "team2"
     bracket[next_round][next_game][position] = winner
 
+def update_round0_matchups(bracket, game, winner):
+    """
+    Helper function for mapping the play-in games
+    """
+    if game == "game1":
+        bracket["round1"]["game1"]["team2"] = winner  # M16 winner
+    elif game == "game2":
+        bracket["round1"]["game5"]["team2"] = winner  # M11 winner
+    elif game == "game3":
+        bracket["round1"]["game9"]["team2"] = winner  # W16 winner
+    elif game == "game4":
+        bracket["round1"]["game13"]["team2"] = winner  # W11 winner
+
 def fill_bracket(bracket):
+    """
+    Function to fill an initial bracket
+    """
+    # First handle the play-in games
+    games = list(bracket["round0"].keys())
+    for game in games:
+        details = bracket["round0"][game]
+        if 'team1' in details and 'team2' in details:  # Ensure both teams are present
+            team1, team2 = details['team1'], details['team2']
+            winner = prompt_for_winner(team1, team2)
+            bracket["round0"][game]['winner'] = winner
+            
+            update_round0_matchups(bracket, game, winner)
+    # Now the remaining rounds
     for round_num in range(1, 7):
         current_round = f"round{round_num}"
         games = list(bracket[current_round].keys())
