@@ -1,0 +1,68 @@
+name: Validate and Approve Bracket Submission
+
+on:
+  pull_request:
+    paths:
+      - '**/final_bracket.json'  # Adjust if your file might be in subdirectories
+    types: [opened, synchronize]
+
+jobs:
+  validate-and-approve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo (for validate_bracket.py and main initial_bracket.json)
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+          path: 'main_repo'
+
+      - name: Checkout PR branch (for PR final_bracket.json)
+        uses: actions/checkout@v3
+        with:
+          path: 'pr_repo'
+      
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'  # Specify the Python version
+
+      - name: Check Date
+        id: check-date
+        run: |
+          # Replace '2023-03-14T12:00:00' with your actual cutoff datetime
+          CUT_OFF=$(date -d '2023-03-14T12:00:00' +%s)
+          NOW=$(date +%s)
+          if [ $NOW -lt $CUT_OFF ]; then
+            echo "It is before the cutoff date."
+            echo "before_cutoff=true" >> $GITHUB_ENV
+          else
+            echo "It is after the cutoff date."
+            echo "before_cutoff=false" >> $GITHUB_ENV
+
+      - name: Validate Bracket
+        if: env.before_cutoff == 'true'
+        run: |
+          python main_repo/validate_bracket.py main_repo/initial_bracket.json pr_repo/final_bracket.json > validation_output.txt
+        continue-on-error: true
+
+      - name: Comment Validation Result on PR
+        if: always()  # Ensures this step always runs to provide feedback
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            **Bracket Validation Results:**
+            ```
+            $(cat validation_output.txt)
+            ```
+  
+        # Make sure validate_bracket.py uses exit codes to signal success/failure
+
+      - name: Auto-Approve PR
+        if: success()
+        run: |
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/reviews \
+          -d '{"event":"APPROVE"}'
