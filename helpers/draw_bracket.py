@@ -27,7 +27,7 @@ def draw_game(ax, round_num, game_num, team1, team2, winner, total_rounds, y_ste
         ax.plot([next_x, x+0.3], [next_y, y2], color="gray", lw=1)
         # Highlight winner
         if round_num==total_rounds:
-            ax.text(next_x+1, (y1 + y2) / 2, winner, ha=align, va="center", fontsize=9, color="blue")
+            ax.text(next_x, (y1 + y2) / 2, winner, ha=align, va="center", fontsize=16, color="blue")
 
 def draw_bracket(file_path):
     with open(file_path, 'r') as f:
@@ -36,19 +36,20 @@ def draw_bracket(file_path):
     fig, ax = plt.subplots(figsize=(12, 8))
     ax.axis('off')  # Turn off the axis
 
-    total_rounds = len(bracket)
+    total_rounds = len(bracket) - 1
     y_step = 1
     game_num = 1
 
     for round_num, (round_name, games) in enumerate(bracket.items()):
-        for game_name, game_details in games.items():
-            team1 = game_details.get('team1', '')
-            team2 = game_details.get('team2', '')
-            winner = game_details.get('winner', '')
-            draw_game(ax, round_num, game_num, team1, team2, winner, total_rounds, y_step)
-            game_num += 1
-        game_num = 1  # Reset game number for next round
-        y_step *= 2  # Double the step size to spread out the teams in the next round
+        if not round_num==0:
+            for game_name, game_details in games.items():
+                team1 = game_details.get('team1', '')
+                team2 = game_details.get('team2', '')
+                winner = game_details.get('winner', '')
+                draw_game(ax, round_num, game_num, team1, team2, winner, total_rounds, y_step)
+                game_num += 1
+            game_num = 1  # Reset game number for next round
+            y_step *= 2  # Double the step size to spread out the teams in the next round
 
     plt.title('Tournament Bracket')
     plt.show()

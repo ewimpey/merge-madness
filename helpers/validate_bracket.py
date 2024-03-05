@@ -1,9 +1,10 @@
 import json
 import os
+import sys
 
-# Change the current working directory to the script's directory
-script_dir = os.path.dirname(__file__)  # Get the directory where the script is located
-os.chdir(script_dir)  # Change the working directory
+# Get the directory where the script is located
+# script_dir = os.path.dirname(__file__)
+# brackets_dir = os.path.abspath(os.path.join(script_dir, '..'))
 
 
 def load_json(file_path):
@@ -11,13 +12,18 @@ def load_json(file_path):
         return json.load(f)
 
 def validate_structure(bracket, expected_rounds, expected_games):
-    # Check number of rounds
+    """
+    Checks the basic structure of the user submission
+    """
+    # Check the number of rounds
     if len(bracket) != expected_rounds:
         return False, "Incorrect number of rounds."
     
     # Check number of games per round
     for round_name, games in bracket.items():
-        if not len(games) in expected_games.values():
+        actual_num_games = len(games)
+        expected_num_games = expected_games[round_name]
+        if not actual_num_games == expected_num_games:
             return False, f"Incorrect number of games in {round_name}."
         
         for game in games.values():
@@ -26,17 +32,33 @@ def validate_structure(bracket, expected_rounds, expected_games):
     
     return True, "Structure is correct."
 
+def is_placeholder(team_name):
+    """
+    This identifies the first round matchups that aren't known 
+    due to the play-in games
+    """
+    return team_name in ("TBD", "")
+
 def validate_initial_matchups(user_bracket, initial_bracket):
-    # Check only the matchups in the initial round
-    for game_id, game in user_bracket["round1"].items():
-        initial_game = initial_bracket["round1"].get(game_id, {})
-        if not initial_game:
-            return False, f"Game {game_id} is missing in the initial bracket."
-        # Compare team1 and team2 for each game in round 1
-        if game["team1"] != initial_game["team1"] or game["team2"] != initial_game["team2"]:
-            return False, f"Matchup in game {game_id} has been altered."
+    """
+    Ensure that the initial matchups haven't been altered
+    """
+    for round_name in ["round0", "round1"]:
+        for game_id, game in user_bracket[round_name].items():
+            initial_game = initial_bracket[round_name].get(game_id, {})
+            
+            if not initial_game:
+                return False, f"Game {game_id} is missing in the initial bracket for {round_name}."
+            
+            # Skip comparison for placeholders in initial games
+            if not is_placeholder(initial_game["team1"]) and game["team1"] != initial_game["team1"]:
+                return False, f"Team 1 in {game_id} for {round_name} has been altered."
+            
+            if not is_placeholder(initial_game["team2"]) and game["team2"] != initial_game["team2"]:
+                return False, f"Team 2 in {game_id} for {round_name} has been altered."
     
-    return True, "Initial matchups are valid."
+    return True, "All matchups are valid."
+
 
 
 def validate_content(bracket, initial_bracket):
@@ -49,17 +71,17 @@ def validate_content(bracket, initial_bracket):
     return True, "Content is valid."
 
 def validate_progression(bracket):
-    # Implement progression validation logic here
-    # This involves checking each winner advances to the correct next game
+    # make sure that the winner goes on to the appropriate game/round
     pass
 
-def main():
-    initial_bracket = load_json('initial_bracket.json')
-    user_bracket = load_json('final_bracket.json')
+def main(initial_path, user_path):
+    initial_bracket = load_json(initial_path)
+    user_bracket = load_json(user_path)
     
     # Define expected rounds and games for validation
-    expected_rounds = 6
-    expected_games = {"round1": 32, 
+    expected_rounds = 7
+    expected_games = {"round0": 4, # for the play-in games
+                      "round1": 32, 
                       "round2": 16, 
                       "round3": 8, 
                       "round4": 4,
@@ -69,22 +91,29 @@ def main():
     structure_valid, structure_message = validate_structure(user_bracket, expected_rounds, expected_games)
     if not structure_valid:
         print(structure_message)
-        return
+        sys.exit(1)
     
     # Validate initial matchups
     matchups_valid, matchups_message = validate_initial_matchups(user_bracket, initial_bracket)
     if not matchups_valid:
         print(matchups_message)
-        return
+        sys.exit(1)
     
     content_valid, content_message = validate_content(user_bracket, initial_bracket)
     if not content_valid:
         print(content_message)
-        return
+        sys.exit(1)
     
     # Add call to validate_progression when implemented
 
     print("Bracket validation passed!")
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 3:
+        print("Usage: python validate_bracket.py <path_to_initial_bracket.json> <path_to_user_bracket.json>")
+        sys.exit(1)
+
+    initial_path = sys.argv[1]
+    user_path = sys.argv[2]
+    
+    main(initial_path, user_path)

@@ -1,9 +1,9 @@
 import json
 import os
 
-# Change the current working directory to the script's directory
-script_dir = os.path.dirname(__file__)  # Get the directory where the script is located
-os.chdir(script_dir)  # Change the working directory
+# Get the directory where the script is located
+script_dir = os.path.dirname(__file__)
+brackets_dir = os.path.abspath(os.path.join(script_dir, '..'))
 
 def load_json(file_path):
     with open(file_path, 'r') as file:
