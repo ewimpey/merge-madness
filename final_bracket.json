@@ -64,8 +64,9 @@
         },
         "game9": {
             "team1": "W1",
-            "team2": "W16b",
-            "winner": "W1"
+            "team2": "W16a",
+            "winner": "W16a"
+
         },
         "game10": {
             "team1": "W8",
@@ -85,7 +86,7 @@
         "game13": {
             "team1": "W6",
             "team2": "W11b",
-            "winner": "W6"
+            "winner": "W11b"
         },
         "game14": {
             "team1": "W3",
@@ -100,7 +101,7 @@
         "game16": {
             "team1": "W2",
             "team2": "W15",
-            "winner": "W2"
+            "winner": "W15"
         },
         "game17": {
             "team1": "E1",
@@ -110,7 +111,7 @@
         "game18": {
             "team1": "E8",
             "team2": "E9",
-            "winner": "E8"
+            "winner": "E9"
         },
         "game19": {
             "team1": "E5",
@@ -125,7 +126,7 @@
         "game21": {
             "team1": "E6",
             "team2": "E11",
-            "winner": "E6"
+            "winner": "E11"
         },
         "game22": {
             "team1": "E3",
@@ -135,7 +136,7 @@
         "game23": {
             "team1": "E7",
             "team2": "E10",
-            "winner": "E7"
+            "winner": "E10"
         },
         "game24": {
             "team1": "E2",
@@ -145,7 +146,7 @@
         "game25": {
             "team1": "S1",
             "team2": "S16",
-            "winner": "S1"
+            "winner": "S16"
         },
         "game26": {
             "team1": "S8",
@@ -170,7 +171,7 @@
         "game30": {
             "team1": "S3",
             "team2": "S14",
-            "winner": "S3"
+            "winner": "S14"
         },
         "game31": {
             "team1": "S7",
@@ -180,7 +181,7 @@
         "game32": {
             "team1": "S2",
             "team2": "S15",
-            "winner": "S2"
+            "winner": "S15"
         }
     },
     "round2": {
@@ -188,16 +189,18 @@
             "team1": "M1",
             "team2": "M8",
             "winner": "M1"
+
         },
         "game2": {
             "team1": "M5",
             "team2": "M4",
             "winner": "M4"
+
         },
         "game3": {
             "team1": "M6",
             "team2": "M3",
-            "winner": "M3"
+            "winner": "M6"
         },
         "game4": {
             "team1": "M7",
@@ -205,9 +208,9 @@
             "winner": "M2"
         },
         "game5": {
-            "team1": "W1",
+            "team1": "W16a",
             "team2": "W8",
-            "winner": "W1"
+            "winner": "W16a"
         },
         "game6": {
             "team1": "W5",
@@ -215,18 +218,18 @@
             "winner": "W4"
         },
         "game7": {
-            "team1": "W6",
+            "team1": "W11b",
             "team2": "W3",
-            "winner": "W3"
+            "winner": "W11b"
         },
         "game8": {
             "team1": "W7",
-            "team2": "W2",
-            "winner": "W2"
+            "team2": "W15",
+            "winner": "W15"
         },
         "game9": {
             "team1": "E1",
-            "team2": "E8",
+            "team2": "E9",
             "winner": "E1"
         },
         "game10": {
@@ -240,14 +243,14 @@
             "winner": "E3"
         },
         "game12": {
-            "team1": "E7",
+            "team1": "E10",
             "team2": "E2",
             "winner": "E2"
         },
         "game13": {
-            "team1": "S1",
-            "team2": "S8",
-            "winner": "S1"
+            "team1": "S16",
+            "team2": "S9",
+            "winner": "S16"
         },
         "game14": {
             "team1": "S5",
@@ -256,28 +259,28 @@
         },
         "game15": {
             "team1": "S6",
-            "team2": "S3",
-            "winner": "S3"
+            "team2": "S14",
+            "winner": "S14"
         },
         "game16": {
-            "team1": "S7",
-            "team2": "S2",
-            "winner": "S2"
+            "team1": "S10",
+            "team2": "S15",
+            "winner": "S15"
         }
     },
     "round3": {
         "game1": {
-            "team1": "M1",
-            "team2": "M4",
-            "winner": "M1"
+            "team1": "M9",
+            "team2": "M5",
+            "winner": "M5"
         },
         "game2": {
-            "team1": "M3",
+            "team1": "M6",
             "team2": "M2",
             "winner": "M2"
         },
         "game3": {
-            "team1": "W1",
+            "team1": "W16a",
             "team2": "W4",
             "winner": "W1"
         },
@@ -297,14 +300,14 @@
             "winner": "E2"
         },
         "game7": {
-            "team1": "S1",
+            "team1": "S16",
             "team2": "S4",
-            "winner": "S1"
+            "winner": "S16"
         },
         "game8": {
-            "team1": "S3",
-            "team2": "S2",
-            "winner": "S2"
+            "team1": "S14",
+            "team2": "S15",
+            "winner": "S15"
         }
     },
     "round4": {
@@ -343,9 +346,9 @@
     },
     "round6": {
         "game1": {
-            "team1": "M1",
+            "team1": "M2",
             "team2": "E1",
-            "winner": "M1"
+            "winner": "E1"
         }
     }
 }
