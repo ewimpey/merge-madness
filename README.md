@@ -3,6 +3,8 @@
 
 Join our NCAA bracket challenge and sharpen your Git skills at the same time! Whether you're a Git newbie or a seasoned veteran, follow these steps to submit your bracket predictions.
 
+### Follow the instructions below to participate, or check out video instructions here: https://www.youtube.com/playlist?list=PLAGij-fctciAzGklzjKztZd7MEZLlp6_v
+
 ## Step 1: Join the fun!
 Join by opening a new issue. Click **Issues** and then **new issue**. 
 
