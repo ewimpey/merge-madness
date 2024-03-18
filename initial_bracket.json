@@ -1,9 +1,9 @@
 {
     "round0": {
-      "game1": {"team1": "M16a", "team2": "M16b", "winner": ""},
-      "game2": {"team1": "M11a", "team2": "M11b", "winner": ""},
-      "game3": {"team1": "W16a", "team2": "W16b", "winner": ""},
-      "game4": {"team1": "W11a", "team2": "W11b", "winner": ""}
+      "game1": {"team1": "Howard", "team2": "Wagner", "winner": ""},
+      "game2": {"team1": "Boise St", "team2": "Colorado", "winner": ""},
+      "game3": {"team1": "Montana St", "team2": "Grambling", "winner": ""},
+      "game4": {"team1": "Virginia", "team2": "Colorado St", "winner": ""}
     },
     "round1": {
       "game1": {"team1": "UConn", "team2": "Stetson", "winner": ""},
