@@ -32,13 +32,13 @@ def update_round0_matchups(bracket, game, winner):
     Helper function for mapping the play-in games
     """
     if game == "game1":
-        bracket["round1"]["game1"]["team2"] = winner  # M16 winner
+        bracket["round1"]["game9"]["team2"] = winner  # M16 winner
     elif game == "game2":
-        bracket["round1"]["game5"]["team2"] = winner  # M11 winner
+        bracket["round1"]["game23"]["team2"] = winner  # M11 winner
     elif game == "game3":
-        bracket["round1"]["game9"]["team2"] = winner  # W16 winner
+        bracket["round1"]["game24"]["team2"] = winner  # W16 winner
     elif game == "game4":
-        bracket["round1"]["game13"]["team2"] = winner  # W11 winner
+        bracket["round1"]["game31"]["team2"] = winner  # W11 winner
 
 def fill_bracket(bracket):
     """
