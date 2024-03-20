@@ -1,0 +1,351 @@
+{
+    "round0": {
+        "game1": {
+            "team1": "Howard",
+            "team2": "Wagner",
+            "winner": "Wagner"
+        },
+        "game2": {
+            "team1": "Boise St",
+            "team2": "Colorado",
+            "winner": "Colorado"
+        },
+        "game3": {
+            "team1": "Montana St",
+            "team2": "Grambling",
+            "winner": "Grambling"
+        },
+        "game4": {
+            "team1": "Virginia",
+            "team2": "Colorado St",
+            "winner": "Colorado St"
+        }
+    },
+    "round1": {
+        "game1": {
+            "team1": "UConn",
+            "team2": "Stetson",
+            "winner": "Stetson"
+        },
+        "game2": {
+            "team1": "FAU",
+            "team2": "Northwestern",
+            "winner": "Northwestern"
+        },
+        "game3": {
+            "team1": "San Diego St.",
+            "team2": "UAB",
+            "winner": "UAB"
+        },
+        "game4": {
+            "team1": "Auburn",
+            "team2": "Yale",
+            "winner": "Yale"
+        },
+        "game5": {
+            "team1": "BYU",
+            "team2": "Duquesne",
+            "winner": "Duquesne"
+        },
+        "game6": {
+            "team1": "Illinois",
+            "team2": "Morehead St.",
+            "winner": "Morehead St."
+        },
+        "game7": {
+            "team1": "Washington St.",
+            "team2": "Drake",
+            "winner": "Drake"
+        },
+        "game8": {
+            "team1": "Iowa St.",
+            "team2": "South Dakota St.",
+            "winner": "South Dakota St."
+        },
+        "game9": {
+            "team1": "UNC",
+            "team2": "Wagner",
+            "winner": "Wagner"
+        },
+        "game10": {
+            "team1": "Mississippi St.",
+            "team2": "Michigan St.",
+            "winner": "Michigan St."
+        },
+        "game11": {
+            "team1": "Saint Marys",
+            "team2": "Grand Canyon",
+            "winner": "Grand Canyon"
+        },
+        "game12": {
+            "team1": "Alabama",
+            "team2": "Charleston",
+            "winner": "Charleston"
+        },
+        "game13": {
+            "team1": "Clemson",
+            "team2": "New Mexico",
+            "winner": "New Mexico"
+        },
+        "game14": {
+            "team1": "Baylor",
+            "team2": "Colgate",
+            "winner": "Colgate"
+        },
+        "game15": {
+            "team1": "Dayton",
+            "team2": "Nevada",
+            "winner": "Nevada"
+        },
+        "game16": {
+            "team1": "Arizona",
+            "team2": "Long Beach St.",
+            "winner": "Long Beach St."
+        },
+        "game17": {
+            "team1": "Houston",
+            "team2": "Longwood",
+            "winner": "Longwood"
+        },
+        "game18": {
+            "team1": "Nebraska",
+            "team2": "Texas AM",
+            "winner": "Texas AM"
+        },
+        "game19": {
+            "team1": "Wisconsin",
+            "team2": "James Madison",
+            "winner": "James Madison"
+        },
+        "game20": {
+            "team1": "Duke",
+            "team2": "Vermont",
+            "winner": "Vermont"
+        },
+        "game21": {
+            "team1": "Texas Tech",
+            "team2": "NC State",
+            "winner": "NC State"
+        },
+        "game22": {
+            "team1": "Kentucky",
+            "team2": "Oakland",
+            "winner": "Oakland"
+        },
+        "game23": {
+            "team1": "Florida",
+            "team2": "Colorado",
+            "winner": "Colorado"
+        },
+        "game24": {
+            "team1": "Marquette",
+            "team2": "Western KY",
+            "winner": "Western KY"
+        },
+        "game25": {
+            "team1": "Purdue",
+            "team2": "Grambling",
+            "winner": "Grambling"
+        },
+        "game26": {
+            "team1": "Utah State",
+            "team2": "TCU",
+            "winner": "TCU"
+        },
+        "game27": {
+            "team1": "Gonzaga",
+            "team2": "McNeese",
+            "winner": "McNeese"
+        },
+        "game28": {
+            "team1": "Kansas",
+            "team2": "Samford",
+            "winner": "Samford"
+        },
+        "game29": {
+            "team1": "South Carolina",
+            "team2": "Oregon",
+            "winner": "Oregon"
+        },
+        "game30": {
+            "team1": "Creighton",
+            "team2": "Akron",
+            "winner": "Akron"
+        },
+        "game31": {
+            "team1": "Texas",
+            "team2": "Colorado St",
+            "winner": "Colorado St"
+        },
+        "game32": {
+            "team1": "Tennessee",
+            "team2": "Saint Peters",
+            "winner": "Saint Peters"
+        }
+    },
+    "round2": {
+        "game1": {
+            "team1": "Stetson",
+            "team2": "Northwestern",
+            "winner": "Northwestern"
+        },
+        "game2": {
+            "team1": "UAB",
+            "team2": "Yale",
+            "winner": "Yale"
+        },
+        "game3": {
+            "team1": "Duquesne",
+            "team2": "Morehead St.",
+            "winner": "Morehead St."
+        },
+        "game4": {
+            "team1": "Drake",
+            "team2": "South Dakota St.",
+            "winner": "South Dakota St."
+        },
+        "game5": {
+            "team1": "Wagner",
+            "team2": "Michigan St.",
+            "winner": "Michigan St."
+        },
+        "game6": {
+            "team1": "Grand Canyon",
+            "team2": "Charleston",
+            "winner": "Charleston"
+        },
+        "game7": {
+            "team1": "New Mexico",
+            "team2": "Colgate",
+            "winner": "Colgate"
+        },
+        "game8": {
+            "team1": "Nevada",
+            "team2": "Long Beach St.",
+            "winner": "Long Beach St."
+        },
+        "game9": {
+            "team1": "Longwood",
+            "team2": "Texas AM",
+            "winner": "Texas AM"
+        },
+        "game10": {
+            "team1": "James Madison",
+            "team2": "Vermont",
+            "winner": "Vermont"
+        },
+        "game11": {
+            "team1": "NC State",
+            "team2": "Oakland",
+            "winner": "Oakland"
+        },
+        "game12": {
+            "team1": "Colorado",
+            "team2": "Western KY",
+            "winner": "Western KY"
+        },
+        "game13": {
+            "team1": "Grambling",
+            "team2": "TCU",
+            "winner": "TCU"
+        },
+        "game14": {
+            "team1": "McNeese",
+            "team2": "Samford",
+            "winner": "Samford"
+        },
+        "game15": {
+            "team1": "Oregon",
+            "team2": "Akron",
+            "winner": "Akron"
+        },
+        "game16": {
+            "team1": "Colorado St",
+            "team2": "Saint Peters",
+            "winner": "Saint Peters"
+        }
+    },
+    "round3": {
+        "game1": {
+            "team1": "Northwestern",
+            "team2": "Yale",
+            "winner": "Yale"
+        },
+        "game2": {
+            "team1": "Morehead St.",
+            "team2": "South Dakota St.",
+            "winner": "South Dakota St."
+        },
+        "game3": {
+            "team1": "Michigan St.",
+            "team2": "Charleston",
+            "winner": "Charleston"
+        },
+        "game4": {
+            "team1": "Colgate",
+            "team2": "Long Beach St.",
+            "winner": "Long Beach St."
+        },
+        "game5": {
+            "team1": "Texas AM",
+            "team2": "Vermont",
+            "winner": "Vermont"
+        },
+        "game6": {
+            "team1": "Oakland",
+            "team2": "Western KY",
+            "winner": "Western KY"
+        },
+        "game7": {
+            "team1": "TCU",
+            "team2": "Samford",
+            "winner": "Samford"
+        },
+        "game8": {
+            "team1": "Akron",
+            "team2": "Saint Peters",
+            "winner": "Saint Peters"
+        }
+    },
+    "round4": {
+        "game1": {
+            "team1": "Yale",
+            "team2": "South Dakota St.",
+            "winner": "South Dakota St."
+        },
+        "game2": {
+            "team1": "Charleston",
+            "team2": "Long Beach St.",
+            "winner": "Long Beach St."
+        },
+        "game3": {
+            "team1": "Vermont",
+            "team2": "Western KY",
+            "winner": "Western KY"
+        },
+        "game4": {
+            "team1": "Samford",
+            "team2": "Saint Peters",
+            "winner": "Saint Peters"
+        }
+    },
+    "round5": {
+        "game1": {
+            "team1": "South Dakota St.",
+            "team2": "Long Beach St.",
+            "winner": "Long Beach St."
+        },
+        "game2": {
+            "team1": "Western KY",
+            "team2": "Saint Peters",
+            "winner": "Saint Peters"
+        }
+    },
+    "round6": {
+        "game1": {
+            "team1": "Long Beach St.",
+            "team2": "Saint Peters",
+            "winner": "Saint Peters"
+        }
+    }
+}
