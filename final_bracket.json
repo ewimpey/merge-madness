@@ -4,6 +4,7 @@
             "team1": "Howard",
             "team2": "Wagner",
             "winner": "Wagner"
+
         },
         "game2": {
             "team1": "Boise St",
@@ -95,7 +96,7 @@
         "game15": {
             "team1": "Dayton",
             "team2": "Nevada",
-            "winner": "Nevada"
+            "winner": "Dayton"
         },
         "game16": {
             "team1": "Arizona",
@@ -111,6 +112,7 @@
             "team1": "Nebraska",
             "team2": "Texas AM",
             "winner": "Texas AM"
+
         },
         "game19": {
             "team1": "Wisconsin",
@@ -174,7 +176,7 @@
         },
         "game31": {
             "team1": "Texas",
-            "team2": "Colorado St",
+            "team2": "Virginia",
             "winner": "Texas"
         },
         "game32": {
@@ -192,7 +194,7 @@
         "game2": {
             "team1": "San Diego St.",
             "team2": "Auburn",
-            "winner": "Auburn"
+            "winner": "San Diego St."
         },
         "game3": {
             "team1": "BYU",
@@ -220,7 +222,7 @@
             "winner": "Clemson"
         },
         "game8": {
-            "team1": "Nevada",
+            "team1": "Dayton",
             "team2": "Arizona",
             "winner": "Arizona"
         },
@@ -235,14 +237,14 @@
             "winner": "Duke"
         },
         "game11": {
-            "team1": "NC State",
+            "team1": "Texas Tech",
             "team2": "Kentucky",
-            "winner": "NC State"
+            "winner": "Kentucky"
         },
         "game12": {
-            "team1": "Florida",
+            "team1": "Colorado",
             "team2": "Marquette",
-            "winner": "Florida"
+            "winner": "Marquette"
         },
         "game13": {
             "team1": "Purdue",
@@ -268,8 +270,8 @@
     "round3": {
         "game1": {
             "team1": "UConn",
-            "team2": "Auburn",
-            "winner": "UConn"
+            "team2": "San Diego St.",
+            "winner": "San Diego St."
         },
         "game2": {
             "team1": "Illinois",
@@ -293,12 +295,12 @@
         },
         "game6": {
             "team1": "NC State",
-            "team2": "Florida",
-            "winner": "Florida"
+            "team2": "Marquette",
+            "winner": "Marquette"
         },
         "game7": {
             "team1": "Purdue",
-            "team2": "Kansas",
+            "team2": "Gonzaga",
             "winner": "Purdue"
         },
         "game8": {
@@ -311,16 +313,16 @@
         "game1": {
             "team1": "UConn",
             "team2": "Iowa St.",
-            "winner": "Iowa St."
+            "winner": "UConn"
         },
         "game2": {
             "team1": "UNC",
-            "team2": "Clemson",
-            "winner": "UNC"
+            "team2": "Arizona",
+            "winner": "Arizona"
         },
         "game3": {
             "team1": "Houston",
-            "team2": "Florida",
+            "team2": "Marquette",
             "winner": "Houston"
         },
         "game4": {
@@ -331,9 +333,9 @@
     },
     "round5": {
         "game1": {
-            "team1": "Iowa St.",
-            "team2": "UNC",
-            "winner": "UNC"
+            "team1": "UConn",
+            "team2": "Arizona",
+            "winner": "UConn"
         },
         "game2": {
             "team1": "Houston",
@@ -343,9 +345,9 @@
     },
     "round6": {
         "game1": {
-            "team1": "UNC",
+            "team1": "UConn",
             "team2": "Purdue",
-            "winner": "UNC"
+            "winner": "Purdue"
         }
     }
 }
