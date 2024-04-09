@@ -1,3 +1,5 @@
+# Congratulations to [sakar123](https://github.com/sakar123) for winning this year's Merge Madness! 
+
 # Welcome to Merge Madness 24!
 ![Merge Madness](/helpers/merge-madness.jpg)
 
