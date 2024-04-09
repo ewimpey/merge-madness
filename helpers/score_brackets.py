@@ -23,8 +23,10 @@ def score_bracket(user_bracket, answer_key):
     return score
 
 def main():
-    user_bracket = load_json('final_bracket.json')
-    answer_key = load_json('answer_key.json')
+    final_bracket = os.path.join(brackets_dir, 'final_bracket.json')
+    answer_key = os.path.join(brackets_dir, 'answer_key.json')
+    user_bracket = load_json(final_bracket)
+    answer_key = load_json(answer_key)
     
     user_score = score_bracket(user_bracket, answer_key)
     print(f"User's Bracket Score: {user_score}")
