@@ -1,4 +1,6 @@
-# Congratulations to [sakar123](https://github.com/sakar123) for winning this year's Merge Madness! 
+# Yo, check out the 2025 contest here: https://github.com/ewimpey/merge-madness-25
+
+# Congratulations to [sakar123](https://github.com/sakar123) for winning the 2024 Merge Madness! 
 
 # Welcome to Merge Madness 24!
 ![Merge Madness](/helpers/merge-madness.jpg)
